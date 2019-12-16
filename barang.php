@@ -6,6 +6,24 @@
 <button style="margin-bottom:20px" data-toggle="modal" data-target="#myModal" class="btn btn-info col-md-2"><span class="glyphicon glyphicon-plus"></span>Tambah Barang</button>
 <br/>
 <br/>
+<!-- Untuk menampilkan pesan -->
+
+<?php 
+$periksa=mysql_query("select * from barang where jumlah <=3");
+while($q=mysql_fetch_array($periksa)){	
+	if($q['jumlah']<=3){	
+		?>	
+		<script>
+			$(document).ready(function(){
+				$('#pesan_sedia').css("color","red");
+				$('#pesan_sedia').append("<span class='glyphicon glyphicon-asterisk'></span>");
+			});
+		</script>
+		<?php
+		echo "<div style='padding:5px' class='alert alert-warning'><span class='glyphicon glyphicon-info-sign'></span> Stok  <a style='color:red'>". $q['nama']."</a> yang tersisa sudah kurang dari 3 . silahkan pesan lagi !!</div>";
+	}
+}
+?>
 
 <!--untuk menghitung halaman dan bbaris-->
 <?php 
