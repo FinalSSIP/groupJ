@@ -1,7 +1,7 @@
 <?php
 
 include 'config.php';
-require('../assets/pdf/fpdf.php');
+require('assets/pdf/fpdf.php');
 
 $pdf = new FPDF("L","cm","A4");
 
