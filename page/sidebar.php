@@ -14,7 +14,7 @@
 						<a href="barang.php"><i class="fa fa-cubes" ></i><span> Barang</span></a>
 					</li>
 					<li>
-						<a href=""><i class="fa fa-shopping-cart"></i><span> Penjualan</span></a>
+						<a href="barang_laku.php"><i class="fa fa-shopping-cart"></i><span> Penjualan</span></a>
 					</li>
 					<li>
 						<a href="logout.php" >	
