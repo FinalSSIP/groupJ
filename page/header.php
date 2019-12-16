@@ -29,6 +29,7 @@
 			</div>
 			<div class="collapse navbar-collapse">				
 				<ul class="nav navbar-nav navbar-right">
+					<li><a id="pesan_sedia" href="#" data-toggle="modal" data-target="#modalpesan"><span class='glyphicon glyphicon-comment'></span>  Pesan</a></li>
 					<li><a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">Hy , <?php echo $_SESSION['uname']  ?>&nbsp&nbsp<span class="glyphicon glyphicon-user"></span></a></li>
 				</ul>
 			</div>
