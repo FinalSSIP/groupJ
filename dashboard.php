@@ -1,5 +1,5 @@
 <?php
-	include 'page/header.php';
+	include 'header.php';
 ?>
 <section class="content">
 	<div class="inner">
