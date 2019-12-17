@@ -1,9 +1,8 @@
-
-<?php 
-
-	require_once 'page/header.php';
-	require_once 'page/sidebar.php';
-	require_once 'page/konten.php';
-	require_once 'page/footer.php';
-
- ?>
+<?php
+	include 'page/header.php';
+?>
+<section class="content">
+	<div class="inner">
+			<h2>SELAMAT DATANG DI KIOS MASA DEPAN</h2>
+	</div>
+</section>
