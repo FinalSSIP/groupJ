@@ -35,6 +35,32 @@ include 'config.php';
 		</div>
 	</div>
 
+	<!-- untuk menampilkan pesan notifikasi untuk stok bbarang yang kurang -->
+	<div id="modalpesan" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Pesan Notification</h4>
+				</div>
+				<div class="modal-body">
+					<?php 
+					$periksa=mysql_query("select * from barang where jumlah <=3");
+					while($q=mysql_fetch_array($periksa)){	
+						if($q['jumlah']<=3){			
+							echo "<div style='padding:5px' class='alert alert-warning'><span class='glyphicon glyphicon-info-sign'></span> Stok  <a style='color:red'>". $q['nama']."</a> yang tersisa sudah kurang dari 3 . silahkan pesan lagi !!</div>";	
+						}
+					}
+					?>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>						
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
   		<aside class="sidebar sidebar-collapse ">
 			<div class="menu">
 				<ul class="menu-content">
