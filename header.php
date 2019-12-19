@@ -60,10 +60,34 @@ include 'config.php';
 			</div>
 		</div>
 	</div>
-
+<!-- untuk sidebar -->
   		<aside class="sidebar sidebar-collapse ">
 			<div class="menu">
+				
+				<!-- untuk foto  -->
+				<?php 
+			$use=$_SESSION['uname'];
+			$fo=mysql_query("select foto from admin where uname='$use'");
+			while($f=mysql_fetch_array($fo)){
+				?>				
+
+				<div class="col-xs-6 col-md-12">
+					<a class="thumbnail">
+						<img class="img-responsive" src="foto/<?php echo $f['foto']; ?>">
+					</a>
+				</div>
+				<?php 
+			}
+			?>
+				
 				<ul class="menu-content">
+					<li>
+						<a href="#"><span class="glyphicon glyphicon-user"></span>User<i class="fa fa-angle-down pull-right"></i></a>
+						<ul>
+							<li><a href="ganti_foto.php"><span class="glyphicon glyphicon-picture"></span>  Ganti Foto</a></li>
+
+						</ul>
+					</li>
 					<li>
 						<a href="Dashboard.php"><i class="fa fa-home"></i><span> Dashboard</span></a>
 
