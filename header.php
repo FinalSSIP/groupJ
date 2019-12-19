@@ -85,5 +85,10 @@ include 'config.php';
 	<script src="dist/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="dist/js/admin.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.js"></script>	
+	<link rel="stylesheet" type="text/css" href="assets/js/jquery-ui/jquery-ui.css">
 </body>
 </html>
