@@ -1,5 +1,5 @@
 <?php 
-include 'page/header.php';
+include 'header.php';
 ?>
 
 <h3><span class="glyphicon glyphicon-picture"></span>  Ganti Foto</h3>
