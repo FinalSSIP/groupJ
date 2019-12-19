@@ -1,5 +1,6 @@
 <?php include 'header.php';	?>
 
+<section class="content">
 <h3><span class="glyphicon glyphicon-briefcase"></span>  Data Barang Terjual</h3>
 <button style="margin-bottom:20px" data-toggle="modal" data-target="#myModal" class="btn btn-info col-md-2"><span class="glyphicon glyphicon-pencil"></span>  Entry</button>
 <form action="" method="get">
@@ -17,7 +18,6 @@
 			?>			
 		</select>
 	</div>
-
 </form>
 <br/>
 <?php 
@@ -152,9 +152,9 @@ if(isset($_GET['tanggal'])){
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
+		<script type="text/javascript">
 		$(document).ready(function(){
 			$("#tgl").datepicker({dateFormat : 'yy/mm/dd'});							
 		});
 	</script>
-	<?php include 'footer.php'; ?>
+	
