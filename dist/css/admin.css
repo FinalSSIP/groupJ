@@ -58,15 +58,6 @@ ul li a span
 	display: inline-block;
 }
 
-ul li a .fa-angle-down
-{
-	margin-right: 3px;
-}
-
-ul ul 
-{
-	display: none;
-}
 
 @media (min-width: 768px) 
 {
